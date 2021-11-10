@@ -1,0 +1,14 @@
+type Card {
+    id: ID!
+    number: String!
+    user: User!
+}
+
+extend type Query {
+    cards:[Card]
+    card(userId: ID!): Card!
+}
+
+extend type Mutation {
+    createCard(number: String!, userId: ID!): Card!
+}

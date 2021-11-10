@@ -9,8 +9,8 @@ import java.util.List;
 
 public class UserNotFoundException extends RuntimeException implements GraphQLError {
 
-    public UserNotFoundException(String message) {
-        super(message);
+    public UserNotFoundException(String id) {
+        super("User with id " + id + " does not exist");
     }
 
     @Override
