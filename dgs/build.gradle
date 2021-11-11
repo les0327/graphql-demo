@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.les'
+version '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:latest.release"))
+    implementation "com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter"
+}
+
+test {
+    useJUnitPlatform()
+}
