@@ -1,0 +1,19 @@
+group 'com.les'
+version '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+dependencies {
+
+    implementation project(":common")
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // Spring GraphQL Boot starter
+    implementation 'org.springframework.experimental:graphql-spring-boot-starter:1.0.0-SNAPSHOT'
+
+    testImplementation 'org.springframework.graphql:spring-graphql-test:1.0.0-SNAPSHOT'
+}
+
+test {
+    useJUnitPlatform()
+}
