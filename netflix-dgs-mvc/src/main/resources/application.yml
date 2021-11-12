@@ -1,0 +1,6 @@
+server:
+  port: 8082
+
+dgs:
+  graphql:
+    schemaLocations: classpath*:graphql/**/*.graphql*
